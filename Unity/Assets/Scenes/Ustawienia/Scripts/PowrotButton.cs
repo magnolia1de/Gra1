@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class PowrotButton : MonoBehaviour
 {
     public Button button;
+
     private void Start()
     {
         Button btn = button.GetComponent<Button>();

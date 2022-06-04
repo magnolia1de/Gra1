@@ -272,8 +272,8 @@ MonoBehaviour:
     y: 0
     width: 396.6667
     height: 587.3333
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -337,7 +337,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -398,7 +398,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: c4e0ffff68e1ffffb4e1ffff20e6ffff86e6ffffa0e6ffff7ce8ffff96e8ffffaae8ffffe0e8ffff32edffff7ef0ffffc0f0ffff46f1ffff00f2ffff3af3ffff52f3ffffb8f4ffff46f9ffff70f9ffffa4f9ffff62fbfffff84300001244000090590000485d0000
+      m_ExpandedIDs: 40d5ffff96d5ffffc8d6ffff76d7ffff70d8ffff9ad8ffffb8d8fffff0d9ffff08daffff3adaffff2adbffff1cdeffff1ee6ffff7cedffffb6edffffd6f0ffffcef1fffff8f1ffff5af2fffffcf2ffff16f3ffff40f3ffffcef3ffffeaf3ffff6ef4ffffc6f4ffff68f5ffff82f5ffffacf5ffff4af6ffff7cf6ffff44f7ffff58f7ffff82f7ffff9cf7ffff02faffff16faffff3efaffff64faffff62fbfffffe5900000e5a0000385b0000e45c00002c5d0000105e0000bc5e00003c6000006a60000074600000b6600000e261000032cf000072cf000032d000007ad0000084d000009ed00000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -458,9 +458,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 176.45045, y: 112.754074, z: -8.992537}
+    m_Target: {x: 198.0788, y: 142.18205, z: -52.73103}
     speed: 2
-    m_Value: {x: 176.45045, y: 112.754074, z: -8.992537}
+    m_Value: {x: 198.0788, y: 142.18205, z: -52.73103}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -511,9 +511,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 142.79172
+    m_Target: 168.67157
     speed: 2
-    m_Value: 142.79172
+    m_Value: 168.67157
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -576,22 +576,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scenes/Ustawienia/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 53
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scenes/Ustawienia/Scripts
   m_LastFoldersGridSize: 53
   m_LastProjectPath: C:\Users\satur\Gra1\Gra1\Unity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 96430000
-    m_LastClickedID: 17302
-    m_ExpandedIDs: 0000000092430000964300009a4300002656000000ca9a3b
+    m_SelectedIDs: c4430000
+    m_LastClickedID: 17348
+    m_ExpandedIDs: 00000000a4430000a8430000b843000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -619,7 +619,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000092430000
+    m_ExpandedIDs: 00000000a4430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
