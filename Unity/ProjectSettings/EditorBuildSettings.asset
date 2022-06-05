@@ -20,7 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/J\u0119zyk.unity"
     guid: 2fdc8c18dfbacf048844a32b55042f57
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Muzyka.unity
     guid: 76b7b0a45eec2cc47af33b5a35b174a3
+  - enabled: 1
+    path: Assets/Scenes/LVL1.unity
+    guid: a1f7ddef4bca1924cab7b2d43d409202
   m_configObjects: {}
