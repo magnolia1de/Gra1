@@ -7,13 +7,11 @@ public class Player : MonoBehaviour
     Transform PlayerTransform;
     [SerializeField] private float speedFactor;
 
-    // Start is called before the first frame update
     void Start()
     {
         PlayerTransform = GetComponent<Transform>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         float hAxis = Input.GetAxis("Horizontal");
