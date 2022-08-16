@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class drabina2 : MonoBehaviour
+public class RuchPoDrabinie : MonoBehaviour
 {
     private float vertical;
     private float speed = 8f;
@@ -10,11 +10,12 @@ public class drabina2 : MonoBehaviour
     private bool isClimbing;
 
     [SerializeField] private Rigidbody2D rb;
-    void Update()
+
+    private void Update()
     {
         vertical = Input.GetAxis("Vertical");
 
-        if (isLadder && Mathf.Abs(vertical) > 0f)
+        if(isLadder && Mathf.Abs(vertical) > 0f);
         {
             isClimbing = true;
         }
@@ -23,34 +24,33 @@ public class drabina2 : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (isClimbing)
+        if(isClimbing)
         {
             rb.gravityScale = 0f;
             rb.velocity = new Vector2(rb.velocity.x, vertical * speed);
+         
         }
         else
         {
-            rb.gravityScale = 1f;
+            rb.gravityScale = 3f;
         }
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Ladder"))
+        if(collision.CompareTag("Drabina"))
         {
             isLadder = true;
-
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Ladder"))
+        if(collision.CompareTag("Drabina"))
         {
-            isLadder = false;
+            isLadder= false;
             isClimbing = false;
-
         }
-
     }
+
+
 }

@@ -685,7 +685,7 @@ GameObject:
   - component: {fileID: 369722473}
   m_Layer: 0
   m_Name: drabina
-  m_TagString: Untagged
+  m_TagString: Drabina
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12640,7 +12640,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -12866,6 +12866,7 @@ GameObject:
   - component: {fileID: 2101322953}
   - component: {fileID: 2101322952}
   - component: {fileID: 2101322951}
+  - component: {fileID: 2101322956}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -12885,7 +12886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b635adc5cd104034886017f76123dd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 500
+  jumpForce: 1000
 --- !u!70 &2101322952
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -12899,8 +12900,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.08297793, y: -0.85095966}
-  m_Size: {x: 2.8425348, y: 7.5235996}
+  m_Offset: {x: 0.08297793, y: -0.8586307}
+  m_Size: {x: 2.8425348, y: 7.538942}
   m_Direction: 0
 --- !u!50 &2101322953
 Rigidbody2D:
@@ -12914,7 +12915,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3
@@ -12988,3 +12989,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2101322956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101322950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 768d010a027253e418cd19035018af28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 2101322953}
