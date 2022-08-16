@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] float jumpForce = 500f;
+    public float jumpForce = 500f;
     Rigidbody2D rb;
 
     float dirX;
     float moveSpeed = 10f;
     bool jumpBtnPressed = false;
+    bool isGrounded = true;
     
 
     private void Start()
@@ -20,7 +21,7 @@ public class Player : MonoBehaviour
     private void Update()
     {
         dirX = Input.GetAxisRaw("Horizontal");
-        if (Input.GetButtonDown("Jump")) 
+        if (Input.GetButtonDown("Jump") && isGrounded) 
         {
             jumpBtnPressed = true;        
         }
@@ -35,8 +36,13 @@ public class Player : MonoBehaviour
         {
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
             jumpBtnPressed = false;
-
+            isGrounded = false;
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        isGrounded = true;
+    }
+    
 }
