@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] float jumpForce = 500f;
     Rigidbody2D rb;
 
-    float dirX, dirY;
+    float dirX;
     float moveSpeed = 10f;
+    bool jumpBtnPressed = false;
     
 
     private void Start()
@@ -17,14 +19,24 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        dirX = Input.GetAxis("Horizontal");
-        dirY = Input.GetAxis("Vertical");
+        dirX = Input.GetAxisRaw("Horizontal");
+        if (Input.GetButtonDown("Jump")) 
+        {
+            jumpBtnPressed = true;        
+        }
     }
 
 
     void FixedUpdate()
     {
-        rb.velocity = moveSpeed * new Vector2 (dirX, dirY);
+        rb.velocity = new Vector2 (moveSpeed * dirX, rb.velocity.y);
+
+        if(jumpBtnPressed)
+        {
+            rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
+            jumpBtnPressed = false;
+
+        }
     }
 
 }
